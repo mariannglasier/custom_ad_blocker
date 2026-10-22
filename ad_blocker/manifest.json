@@ -8,5 +8,12 @@
     "rule_resources": [
       { "id": "ruleset_1", "enabled": true, "path": "rules.json" }
     ]
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.pinterest.com/*"],
+      "js": ["hide-promoted.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }

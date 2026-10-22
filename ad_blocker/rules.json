@@ -7,5 +7,14 @@
             "urlFilter": "||doubleclick.net^",
             "resourceTypes": ["script", "image", "sub_frame"]
         }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {"type": "block"},
+        "condition": {
+            "urlFilter": "||googlesyndication.com^",
+            "resourceTypes": ["script", "image", "sub_frame"]
+        }
     }
 ]
